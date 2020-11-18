@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - Barbearia do Ze</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="box">
+                <h1><img src="./imagens/logo.png" alt="logo"></h1>
+
+                <nav>
+                    <ul>
+                        <li><a href= "index.html">Home</a></li>
+                        <li><a href= "produtos.html">Produtos</a></li>
+                        <li><a href= "contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nomeSobrenome" >Nome e Sobrenome</label>
+                <input type="text" id="nomeSobrenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email"class="input-padrao"required placeholder="seuemail@dominio.com.br">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone"class="input-padrao"required placeholder="(xx)xxxxx-xxxx">
+
+                <label for="Mensagem">Mensagem</label>
+                <textarea cols="70" rows="10"id="Mensagem"class="input-padrao"></textarea required>
+            </form>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" value="email" name="contato" id="radio-email">Email</label>
+                
+                <label for="radio-telefone"><input type="radio" value="telefone" name="contato" id="radio-telefone">Telefone</label>
+          
+                <label for="radio-whatsapp"><input type="radio" value="whatsapp" name="contato" id="radio-whatsapp" checked>Whatsapp</label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Qual horario deseja ser atendido?</legend>
+                <select name="" id="">
+                    <option value="">Manhã </option>
+                    <option value="">Tarde </option>
+                    <option value="">Noite</option>
+                </select>
+            </fieldset>
+            <label><input type="checkbox" class="checkbox"checked>Quer receber nossas novidades por e-mail?</label>
+
+            <input type="submit" value="Enviar Formulário" class="enviar">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>08h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td colspan="5">São José dos Campos - SP </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="./imagens/logo-branco.png" alt="logo da barbearia">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2020</p>
+    </footer>
+</body>
+</html>
